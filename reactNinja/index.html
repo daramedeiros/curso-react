@@ -19,7 +19,15 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     <script type="text/babel">
-      ReactDOM.render(<h1>Hello Word</h1>,
+
+        let Title = React.createClass({
+            render: function() {
+                return <h1>Hello Word</h1>
+            }
+        })
+
+      ReactDOM.render(
+          <Title />,
        document.getElementById("app"));
     </script>
 
